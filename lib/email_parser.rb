@@ -8,12 +8,11 @@ class EmailAddressParser
   attr_accessor :emails 
   
   def initialize(emails)
-    email_list = []
     @emails = emails 
   end 
   
   def parse
-    @emails.
+    @emails.split.collect
     
   end 
    
