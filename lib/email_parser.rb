@@ -12,7 +12,7 @@ class EmailAddressParser
   end 
   
   def parse
-    new_list = @emails.split.last 
+    new_list = @emails.split.collect{|items| items.last}
     new_list.uniq 
   end 
    
